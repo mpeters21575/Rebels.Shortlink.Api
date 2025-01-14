@@ -1,6 +1,7 @@
-@Rebels.ShortLink.Api_HostAddress = http://localhost:5207
-
-GET {{Rebels.ShortLink.Api_HostAddress}}/weatherforecast/
+POST {{HostAddress}}{{Path}}{{EncodeUrl}}
 Accept: application/json
+Content-Type: application/json
 
-###
+{
+  "url": "https://rebels.io/become-a-rebel"
+}
