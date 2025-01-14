@@ -14,7 +14,17 @@ public static class CompositionContainer
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(opts =>
         {
-            opts.SwaggerDoc("v1", new OpenApiInfo { Title = "Rebels ShortLink API", Version = "v1" });
+            opts.SwaggerDoc("v1", 
+                new OpenApiInfo
+                {
+                    Title = "Rebels ShortLink API", 
+                    Version = "v1",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Marco Peters",
+                        Url = new Uri("https://malentech.net")
+                    }
+                });
         });
         builder.Services.AddSingleton<IShortLinkService, ShortLinkService>();
         builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
@@ -28,9 +38,7 @@ public static class CompositionContainer
         }
 
         app.UseHttpsRedirection();
-        app.MapEncodeEndpoint();
-        app.MapDecodeEndpoint();
-        app.MapRedirectEndpoint();
+        app.MapEndpoints();
 
         return app;
     }

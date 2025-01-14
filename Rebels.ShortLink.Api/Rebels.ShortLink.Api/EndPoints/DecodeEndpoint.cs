@@ -33,11 +33,11 @@ public static class DecodeEndpoint
             .Produces(StatusCodes.Status400BadRequest)
             .Produces(StatusCodes.Status404NotFound)
             .WithName("DecodeUrl")
-            .WithOpenApi(op =>
+            .WithOpenApi(operation =>
             {
-                op.OperationId = "DecodeUrl";
-                op.Summary = "Decodes a short ID back to its original URL.";
-                return op;
+                operation.OperationId = "DecodeUrl";
+                operation.Summary = "Decodes a short ID back to its original URL.";
+                return operation;
             });
 
         return routes;

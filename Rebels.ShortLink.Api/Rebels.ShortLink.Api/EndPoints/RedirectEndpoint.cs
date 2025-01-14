@@ -34,11 +34,11 @@ public static class RedirectEndpoint
             .Produces(StatusCodes.Status400BadRequest)
             .Produces(StatusCodes.Status404NotFound)
             .WithName("RedirectToOriginal")
-            .WithOpenApi(op =>
+            .WithOpenApi(operation =>
             {
-                op.OperationId = "RedirectToOriginal";
-                op.Summary = "Redirects to the original URL based on the short link ID.";
-                return op;
+                operation.OperationId = "RedirectToOriginal";
+                operation.Summary = "Redirects to the original URL based on the short link ID.";
+                return operation;
             });
 
         return routes;

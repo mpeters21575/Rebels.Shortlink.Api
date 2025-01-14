@@ -27,6 +27,15 @@ public static class EncodeEndpoint
             var shortLink = $"{host}/redirect/{shortId}";
 
             return Results.Ok(new EncodeResponse(shortId, shortLink));
+        }).Produces<DecodeResponse>(StatusCodes.Status200OK)
+        .Produces(StatusCodes.Status400BadRequest)
+        .Produces(StatusCodes.Status404NotFound)
+        .WithName("EncodeUrl")
+        .WithOpenApi(operation =>
+        {
+            operation.OperationId = "EncodeUrl";
+            operation.Summary = "Encodes a URL to a shorter version.";
+            return operation;
         });
 
         return routes;
