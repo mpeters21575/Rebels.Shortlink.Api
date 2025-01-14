@@ -1,0 +1,6 @@
+﻿services:
+  rebels.shortlink.api:
+    image: rebels.shortlink.api
+    build:
+      context: .
+      dockerfile: Rebels.ShortLink.Api/Dockerfile
