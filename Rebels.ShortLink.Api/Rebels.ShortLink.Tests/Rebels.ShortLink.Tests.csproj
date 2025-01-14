@@ -18,4 +18,8 @@
         <Using Include="Xunit"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Rebels.ShortLink.Api\Rebels.ShortLink.Api.csproj" />
+    </ItemGroup>
+
 </Project>
