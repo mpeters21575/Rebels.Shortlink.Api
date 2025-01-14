@@ -24,7 +24,7 @@ public sealed class ShortLinkService : IShortLinkService
         var validationResult = validator.Validate(originalUrl);
         if (!validationResult.IsValid)
         {
-            throw new ArgumentException(validationResult.Errors[0].ErrorMessage, nameof(originalUrl));
+            throw new ArgumentException(validationResult.Errors.First().ErrorMessage, nameof(originalUrl));
         }
 
         var shortId = Guid.NewGuid().ToString("N")[..8];

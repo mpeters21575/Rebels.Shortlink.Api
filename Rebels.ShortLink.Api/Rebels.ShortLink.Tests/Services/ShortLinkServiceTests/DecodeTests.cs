@@ -1,5 +1,6 @@
 using FluentValidation.TestHelper;
 using Rebels.ShortLink.Api.Models;
+using Rebels.ShortLink.Api.Models.Decode;
 using Rebels.ShortLink.Api.Validators;
 
 namespace Rebels.ShortLink.Tests.Services.ShortLinkServiceTests;

@@ -1,6 +1,8 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Rebels.ShortLink.Api.Models;
+using Rebels.ShortLink.Api.Models.Decode;
+using Rebels.ShortLink.Api.Models.Encode;
 using Rebels.ShortLink.Api.Services;
 
 namespace Rebels.ShortLink.Api.EndPoints;

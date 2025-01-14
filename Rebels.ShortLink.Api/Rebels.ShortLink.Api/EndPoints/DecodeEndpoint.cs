@@ -1,5 +1,6 @@
 using FluentValidation;
 using Rebels.ShortLink.Api.Models;
+using Rebels.ShortLink.Api.Models.Decode;
 using Rebels.ShortLink.Api.Services;
 
 namespace Rebels.ShortLink.Api.EndPoints;

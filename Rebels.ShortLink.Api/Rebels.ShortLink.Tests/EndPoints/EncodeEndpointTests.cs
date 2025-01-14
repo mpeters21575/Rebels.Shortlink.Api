@@ -6,7 +6,9 @@ using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
+using Rebels.ShortLink.Api;
 using Rebels.ShortLink.Api.Models;
+using Rebels.ShortLink.Api.Models.Encode;
 using Rebels.ShortLink.Api.Services;
 
 namespace Rebels.ShortLink.Tests.EndPoints;

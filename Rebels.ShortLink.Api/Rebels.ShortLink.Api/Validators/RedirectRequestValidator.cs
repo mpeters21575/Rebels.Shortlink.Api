@@ -1,5 +1,6 @@
 using FluentValidation;
 using Rebels.ShortLink.Api.Models;
+using Rebels.ShortLink.Api.Models.Redirect;
 
 namespace Rebels.ShortLink.Api.Validators;
 
