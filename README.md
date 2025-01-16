@@ -10,7 +10,6 @@ Rebels
 - **URL Decoding**: Retrieve the original URL from a short link.
 - **Redirection**: Automatically redirect from a short URL to the original URL.
 - **Input Validation**: Ensures valid input using FluentValidation.
-- **Localization**: Supports multiple languages for error messages via resource files.
 - **SOLID Principles**: The project design follows SOLID principles for clean, maintainable code.
 
 ## Prerequisites
